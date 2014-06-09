@@ -1,7 +1,6 @@
 void main(string[] argv){
     import std.stdio, std.file, std.container, std.conv, std.algorithm;
 
-    auto startDir = argv[1];
     DirEntry[] arr;
     arr.length = to!uint(argv[2]);
     auto heap = BinaryHeap!(DirEntry[], "a.size > b.size")(arr, 0);
